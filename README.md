@@ -1,6 +1,5 @@
 # 🌱 Smart Irrigation System (IoT Based)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Hardware: ESP8266](https://img.shields.io/badge/Hardware-ESP8266-blue.svg)](https://www.espressif.com/en/products/socs/esp8266)
 [![Platform: Arduino](https://img.shields.io/badge/Platform-Arduino-00979D.svg)](https://www.arduino.cc/)
 [![Status: Completed](https://img.shields.io/badge/Status-Completed-success.svg)]()
@@ -19,7 +18,6 @@ A professional, beginner-friendly IoT solution for automated plant watering. Thi
 - [🚀 Installation & Setup](#-installation--setup)
 - [🔮 Future Improvements](#-future-improvements)
 - [👤 Author](#-author)
-- [📄 License](#-license)
 
 ---
 
@@ -126,10 +124,6 @@ Follow these steps to get your Smart Irrigation System up and running:
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 > [!TIP]
 > **Star this repo** if you find it helpful! ⭐
