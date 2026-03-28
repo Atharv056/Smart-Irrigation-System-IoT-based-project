@@ -121,16 +121,10 @@ void sendSensorData() {
 > - **Relay IN** → Microcontroller D1 (Digital Pin)
 > - **Pump** → Connected via Relay's NO (Normally Open) contact to Power Supply.
 
-*(Placeholder for Circuit Diagram Image)*
-![Circuit Diagram](hardware/circuit-diagram.png)
-
 ---
 
 ## 🖼️ Project Demo
-*(Placeholder for Project Images)*
-| Working Setup | Real-time Demo |
-| :---: | :---: |
-| ![Project Setup](images/working.jpg) | ![Project Demo](images/project-demo.jpg) |
+*(Detailed demo photos coming soon!)*
 
 ---
 
