@@ -130,7 +130,7 @@ void sendSensorData() {
 
 ## 📱 Mobile Application
 
-Monitor and control your plants from your smartphone. Use the **Blynk App** (available on iOS and Android) to create a custom dashboard.
+Monitor and control your plants from your smartphone. Use the **Ardino** (available on iOS and Android) to create a custom dashboard.
 
 ### **App Screenshots**
 
