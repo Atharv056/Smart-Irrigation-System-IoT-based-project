@@ -77,6 +77,8 @@ This project includes two versions of the code:
 ### **Code 1: Basic Automatic Irrigation**
 This version works locally without the internet. It's perfect for a simple, reliable offline setup.
 
+![Code 1 Screenshot](images/code1.png)
+
 ```cpp
 // Basic Soil Moisture Monitoring & Pump Control
 void loop() {
@@ -92,6 +94,8 @@ void loop() {
 
 ### **Code 2: IoT-based Irrigation (Blynk)**
 This version allows you to monitor soil moisture and control the pump from your smartphone anywhere in the world.
+
+![Code 2 Screenshot](images/code2.png)
 
 ```cpp
 // IoT Version using Blynk App
@@ -136,9 +140,11 @@ Monitor and control your plants from your smartphone. Use the **Blynk App** (ava
 
 ### **App Screenshots**
 
+![Mobile Application](images/mobileapplication.png)
+
 | Dashboard View | Real-time Monitoring | Pump Control |
 | :---: | :---: | :---: |
-| ![Dashboard](images/mobile-app-1.png) | ![Real-time Data](images/mobile-app-2.png) | ![Pump Control](images/mobile-app-3.png) |
+| ![Dashboard](images/mobileapplication.png) | ![Real-time Data](images/mobileapplication.png) | ![Pump Control](images/mobileapplication.png) |
 
 > [!NOTE]
 > Create a Blynk project, get your Auth Token, and update the [Code 2](software/arduino-code/smart-irrigation-iot.ino) to get started.
