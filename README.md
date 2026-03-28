@@ -136,7 +136,7 @@ Monitor and control your plants from your smartphone. Use the **Ardino** (availa
 
 | Dashboard View | Real-time Monitoring | Pump Control |
 | :---: | :---: | :---: |
-| ![Dashboard](images/mobileapplication.png) | ![Real-time Data](images/mobileapplication.png) | ![Pump Control](images/mobileapplication.png) |
+| ![Dashboard](images/mobileapplication.png) | ![Real-time Data](images/mobileapplication.png) | ![Pump Control]() |
 
 > [!NOTE]
 > Create a Blynk project, get your Auth Token, and update the [Code 2](software/arduino-code/smart-irrigation-iot.ino) to get started.
