@@ -134,8 +134,6 @@ Monitor and control your plants from your smartphone. Use the **Blynk App** (ava
 
 ### **App Screenshots**
 
-![Mobile Application](images/mobileapplication.png)
-
 | Dashboard View | Real-time Monitoring | Pump Control |
 | :---: | :---: | :---: |
 | ![Dashboard](images/mobileapplication.png) | ![Real-time Data](images/mobileapplication.png) | ![Pump Control](images/mobileapplication.png) |
@@ -180,7 +178,7 @@ Follow these steps to get your Smart Irrigation System up and running:
 
 ## 👤 Author
 **Atharv Pokale**
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- LinkedIn: [Your Profile](https://www.linkedin.com/in/atharv-pokale-dev/)
 
 
 > [!TIP]
