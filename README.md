@@ -4,7 +4,13 @@
 [![Platform: Arduino](https://img.shields.io/badge/Platform-Arduino-00979D.svg)](https://www.arduino.cc/)
 [![Status: Completed](https://img.shields.io/badge/Status-Completed-success.svg)]()
 
-A professional, beginner-friendly IoT solution for automated plant watering. This system monitors soil moisture in real-time and automatically triggers a water pump when the soil becomes dry, ensuring your plants stay healthy while conserving water.
+## 🎯 Project Goal
+
+The goal of this project is to develop a smart irrigation system that allows farmers to control water pumps remotely without physically visiting their farms. 
+
+The system provides a simple application interface where the user can turn the motor ON or OFF with a single click. When the user performs an action, a request is sent to the server, which then communicates with the IoT device installed on the farm. The device receives the command and activates or deactivates the water pump accordingly.
+
+This solution helps farmers save time, reduce manual effort, and improve efficiency by enabling real-time remote control of irrigation systems.
 
 ---
 
@@ -13,8 +19,10 @@ A professional, beginner-friendly IoT solution for automated plant watering. Thi
 - [🛠️ Technologies Used](#-technologies-used)
 - [📦 Hardware Components](#-hardware-components)
 - [⚙️ Working Principle](#-working-principle)
+- [💻 Software Implementation](#-software-implementation)
 - [🔌 Circuit Diagram](#-circuit-diagram)
 - [🖼️ Project Demo](#-project-demo)
+- [📱 Mobile Application](#-mobile-application)
 - [🚀 Installation & Setup](#-installation--setup)
 - [🔮 Future Improvements](#-future-improvements)
 - [👤 Author](#-author)
@@ -62,6 +70,44 @@ The following core components are used in this project:
 
 ---
 
+## 💻 Software Implementation
+
+This project includes two versions of the code:
+
+### **Code 1: Basic Automatic Irrigation**
+This version works locally without the internet. It's perfect for a simple, reliable offline setup.
+
+```cpp
+// Basic Soil Moisture Monitoring & Pump Control
+void loop() {
+  int moisture = analogRead(A0);
+  int percent = map(moisture, 1024, 200, 0, 100);
+
+  if (percent < 30) digitalWrite(RELAY, HIGH); // Dry
+  else if (percent > 70) digitalWrite(RELAY, LOW); // Wet
+  delay(5000);
+}
+```
+> [View Full Code 1](software/arduino-code/smart-irrigation.ino)
+
+### **Code 2: IoT-based Irrigation (Blynk)**
+This version allows you to monitor soil moisture and control the pump from your smartphone anywhere in the world.
+
+```cpp
+// IoT Version using Blynk App
+void sendSensorData() {
+  int percent = map(analogRead(A0), 1024, 200, 0, 100);
+  Blynk.virtualWrite(V1, percent); // Send data to Mobile App
+  if (percent < 30) {
+    digitalWrite(RELAY, HIGH);
+    Blynk.logEvent("soil_dry", "Watering started!");
+  }
+}
+```
+> [View Full Code 2](software/arduino-code/smart-irrigation-iot.ino)
+
+---
+
 ## 🔌 Circuit Diagram
 > [!IMPORTANT]
 > A high-resolution circuit diagram will be uploaded soon. For now, refer to the wiring description below:
@@ -81,6 +127,21 @@ The following core components are used in this project:
 | Working Setup | Real-time Demo |
 | :---: | :---: |
 | ![Project Setup](images/working.jpg) | ![Project Demo](images/project-demo.jpg) |
+
+---
+
+## 📱 Mobile Application
+
+Monitor and control your plants from your smartphone. Use the **Blynk App** (available on iOS and Android) to create a custom dashboard.
+
+### **App Screenshots**
+
+| Dashboard View | Real-time Monitoring | Pump Control |
+| :---: | :---: | :---: |
+| ![Dashboard](images/mobile-app-1.png) | ![Real-time Data](images/mobile-app-2.png) | ![Pump Control](images/mobile-app-3.png) |
+
+> [!NOTE]
+> Create a Blynk project, get your Auth Token, and update the [Code 2](software/arduino-code/smart-irrigation-iot.ino) to get started.
 
 ---
 
@@ -119,10 +180,7 @@ Follow these steps to get your Smart Irrigation System up and running:
 
 ## 👤 Author
 **Atharv Pokale**
-- GitHub: [@atharvpokale](https://github.com/atharvpokale)
 - LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-
----
 
 
 > [!TIP]
